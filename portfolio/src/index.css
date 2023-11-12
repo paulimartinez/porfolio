@@ -35,23 +35,30 @@ nav a{
     display: flex;
 }
 
-.name{
+.inicio{
 padding:50px;
 margin:20px;
 background-image:url(img.jpg);
 border-radius:10px;
-display: grid;
+display: flex;
+justify-content: center;
+align-items: center;
 grid-template-columns: repeat(2,1fr);
 }
 
-.name2{
+
+.sobremi{
   background-color: rgb(47, 16, 158);
   border-radius:10px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   padding:50px;
   margin:20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   }
+
 
 .section{
     text-align:center;
@@ -95,6 +102,7 @@ button{
 .imagen2{
     width:250px;
     border-radius:150px;
+    margin-left: 100px;
 }
 
 .imagen3{
@@ -108,4 +116,21 @@ footer{
 .proyectoimg{
     width:250px;
     border-radius:20px;
+}
+
+section{
+    margin-left: 120px;
+}
+
+section img{
+    object-fit: cover;
+    opacity: .60;
+    transition: 5m ease;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
 }
